@@ -7,7 +7,7 @@ const bodyParser = require('body-parser');
 const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
 const mongoose = require('mongoose');
-const mongoURI = process.env.MONOGODB_URI || 'mongodb://localhost/redux_auth'
+const mongoURI = process.env.MONGODB_URI || 'mongodb://localhost/redux_auth'
 mongoose.connect(mongoURI);
 
 const index = require('./routes/index');
